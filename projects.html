@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | Ashraf Mugalli</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Ashraf Mugalli</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -20,17 +23,25 @@
 
     <main>
         <section class="projects">
-            <h1>Projects</h1>
-            <ul>
-                <li><a href="project1.html">Network Security Dashboard</a></li>
-                <li><a href="project2.html">Packet Tracer Simulation</a></li>
-            </ul>
+            <h1>My Projects</h1>
+            <p>Here are some of the key projects I have worked on, focusing on network security and simulation.</p>
+            
+            <div class="project-list">
+                <article class="project">
+                    <h2><a href="project1.html">Network Security Dashboard</a></h2>
+                    <p>A dashboard providing real-time security analytics, log monitoring, and threat intelligence.</p>
+                </article>
+                
+                <article class="project">
+                    <h2><a href="project2.html">Packet Tracer Simulation</a></h2>
+                    <p>A detailed simulation of a secure enterprise network using Cisco Packet Tracer.</p>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Ashraf Mugalli | <a href="contact.html">Get in Touch</a></p>
     </footer>
 </body>
 </html>
-    
