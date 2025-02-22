@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Floating Navigation Menu -->
+    <nav class="floating-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Ashraf Mugalli</h1>
+            <p class="animated-text">Cybersecurity Engineer</p>
+            <a href="projects.html" class="cta">Explore My Work</a>
+        </section>
+
+      <!-- Projects Section -->
+<section class="featured">
+    <h2>Featured Projects</h2>
+    <div class="project-carousel">
+        <!-- Individual Project Cards -->
+        <div class="project-card" onclick="showDetails('Network Security Dashboard')">
+            <img src="assets/security-dashboard.png" alt="Network Security Dashboard">
+            <h3>Network Security Dashboard</h3>
+            <p>Interactive dashboard visualizing vulnerabilities.</p>
+        </div>
+        <div class="project-card" onclick="showDetails('Packet Tracer Simulation')">
+            <img src="assets/packet-tracer.png" alt="Packet Tracer Simulation">
+            <h3>Packet Tracer Simulation</h3>
+            <p>Real-time network configuration simulations.</p>
+        </div>
+        <div class="project-card" onclick="showDetails('DNS Sinkhole')">
+            <img src="assets/dns-sinkhole.png" alt="DNS Sinkhole">
+            <h3>DNS Sinkhole</h3>
+            <p>Custom DNS filtering setup to block malicious traffic.</p>
+        </div>
+    </div>
+    <div id="project-details">
+        <!-- Modal for Project Details -->
+        <h3 id="project-title"></h3>
+        <p id="project-description"></p>
+        <button onclick="closeDetails()">Close</button>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ashraf Mugalli</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
