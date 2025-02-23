@@ -7,41 +7,75 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">Ashraf Mugalli</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <nav class="floating-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
         <section class="projects">
-            <h1>My Projects</h1>
-            <p>Here are some of the key projects I have worked on, focusing on network security and simulation.</p>
-            
-            <div class="project-list">
-                <article class="project">
-                    <h2><a href="project1.html">Network Security Dashboard</a></h2>
-                    <p>A dashboard providing real-time security analytics, log monitoring, and threat intelligence.</p>
-                </article>
-                
-                <article class="project">
-                    <h2><a href="project2.html">Packet Tracer Simulation</a></h2>
-                    <p>A detailed simulation of a secure enterprise network using Cisco Packet Tracer.</p>
-                </article>
+            <h1 class="animated-title">My Projects</h1>
+            <p>Explore my portfolio of cybersecurity and networking projects.</p>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="assets/security-dashboard.png" alt="Network Security Dashboard">
+                    <div class="project-info">
+                        <h3>Network Security Dashboard</h3>
+                        <p>Real-time visualization of security threats and vulnerabilities.</p>
+                        <div class="project-links">
+                            <a href="project1.html" class="project-btn">View Project</a>
+                            <button onclick="showDetails('Network Security Dashboard')">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/packet-tracer.png" alt="Packet Tracer Simulation">
+                    <div class="project-info">
+                        <h3>Packet Tracer Simulation</h3>
+                        <p>Simulated secure network environments using Cisco Packet Tracer.</p>
+                        <div class="project-links">
+                            <a href="project2.html" class="project-btn">View Project</a>
+                            <button onclick="showDetails('Packet Tracer Simulation')">More Info</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/dns-sinkhole.png" alt="DNS Sinkhole">
+                    <div class="project-info">
+                        <h3>DNS Sinkhole</h3>
+                        <p>Blocking malicious domains through DNS filtering strategies.</p>
+                        <div class="project-links">
+                            <a href="dns-sinkhole.html" class="project-btn">View Project</a>
+                            <button onclick="showDetails('DNS Sinkhole')">More Info</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Project Details Modal -->
+        <div id="project-details" class="modal">
+            <div class="modal-content">
+                <h2 id="project-title"></h2>
+                <p id="project-description"></p>
+                <button onclick="closeDetails()">Close</button>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ashraf Mugalli | <a href="contact.html">Get in Touch</a></p>
+        <p>&copy; 2025 Ashraf Mugalli | <a href="contact.html">Get in Touch</a></p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
