@@ -20,42 +20,72 @@
     </nav>
 
     <main>
-        <!-- Hero Section -->
+    
         <section class="hero">
-            <h1>Ashraf Mugalli</h1>
-            <p class="animated-text">Cybersecurity Engineer</p>
+            <h1 class="hero-title">Ashraf Mugalli</h1>
+            <p class="animated-text" id="animated-text">Cybersecurity Analyst</p>
+            <p class="dynamic-quote" id="quote-text">"Security is not a product, but a process." – Bruce Schneier</p>
             <a href="projects.html" class="cta">Explore My Work</a>
         </section>
+        
+        <div class="scroll-indicator">
+            <p>Scroll down</p>
+            <div class="scroll-arrow"></div>
+        </div>
+        
+        <section class="certifications">
+            <h2>My Certifications</h2>
+            <p>Recognized achievements in cybersecurity and networking.</p>
+            <div class="badge-container">
+             
+                <div class="badge">
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/badges/embed.js"></script>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e3215b7f-6487-4083-b894-df39594863cc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                <div class="badge">
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/badges/embed.js"></script>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="283a1890-0269-47a6-96ad-96639ec749bb" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                <div class="badge">
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/badges/embed.js"></script>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="17674428-e69a-49ad-8272-3f6b33c84406" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                <div class="badge">
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/badges/embed.js"></script>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="32e7ad18-53a8-4239-9130-24b3b916fe49" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+                <div class="badge">
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/badges/embed.js"></script>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e2aee018-a2fc-46e0-b693-de27e6a6a902" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+              
+           
+            </div>
+        </section>
 
-      <!-- Projects Section -->
-<section class="featured">
-    <h2>Featured Projects</h2>
-    <div class="project-carousel">
-        <!-- Individual Project Cards -->
-        <div class="project-card" onclick="showDetails('Network Security Dashboard')">
-            <img src="assets/security-dashboard.png" alt="Network Security Dashboard">
-            <h3>Network Security Dashboard</h3>
-            <p>Interactive dashboard visualizing vulnerabilities.</p>
-        </div>
-        <div class="project-card" onclick="showDetails('Packet Tracer Simulation')">
-            <img src="assets/packet-tracer.png" alt="Packet Tracer Simulation">
-            <h3>Packet Tracer Simulation</h3>
-            <p>Real-time network configuration simulations.</p>
-        </div>
-        <div class="project-card" onclick="showDetails('DNS Sinkhole')">
-            <img src="assets/dns-sinkhole.png" alt="DNS Sinkhole">
-            <h3>DNS Sinkhole</h3>
-            <p>Custom DNS filtering setup to block malicious traffic.</p>
-        </div>
-    </div>
-    <div id="project-details">
-        <!-- Modal for Project Details -->
-        <h3 id="project-title"></h3>
-        <p id="project-description"></p>
-        <button onclick="closeDetails()">Close</button>
-    </div>
-</section>
-
+        <!-- Skills Summary -->
+        <section class="skills-summary">
+            <h2>Skills & Expertise</h2>
+            <p>Areas where I excel in cybersecurity and networking.</p>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Cybersecurity</h3>
+                    <p>Network security, threat detection, incident response.</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Networking</h3>
+                    <p>CCNA-level networking, VLAN segmentation, firewall policies.</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Programming</h3>
+                    <p>Python automation, Java applications, scripting for security tasks.</p>
+                </div>
+                <div class="skill-box">
+                    <h3>System Administration</h3>
+                    <p>Linux security hardening, Windows Server management.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -63,6 +93,5 @@
     </footer>
 
     <script src="scripts.js"></script>
-    
 </body>
 </html>
