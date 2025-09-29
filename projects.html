@@ -3,144 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Ashraf Mugalli</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Page Under Construction</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="backgroundCanvas"></canvas>
-
-    <nav class="floating-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="projects">
-            <h1 class="animated-title">My Projects</h1>
-            
-
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="assets/networktopology.png" alt="Enterprise Network Design">
-                    <div class="project-info">
-                        <h3>Enterprise Network Design & Security Implementation</h3>
-                        <p>Designed and configured a secure enterprise network with VLAN segmentation, ACLs, and firewall policies.</p>
-                        <button onclick="showDetails('Enterprise Network Design & Security Implementation', 'Developed a multi-layer network in Cisco Packet Tracer, incorporating VLAN segmentation, access control lists (ACLs), firewall rules, and secure remote access policies.')">More Info</button>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/dns-sinkhole.png" alt="DNS Sinkhole">
-                    <div class="project-info">
-                        <h3>DNS Sinkhole</h3>
-                        <p>Blocking malicious domains through DNS filtering strategies.</p>
-                        <button onclick="showDetails('DNS Sinkhole', 'Implemented a DNS sinkhole solution using Bind9 and Pi-hole to proactively block known malicious domains. Integrated threat intelligence feeds and automated domain blacklist updates.')">More Info</button>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/Android-Studio.png" alt="Java Server-Client Application">
-                    <div class="project-info">
-                        <h3>Java Server-Client Application</h3>
-                        <p>Built a real-time communication system using Java.</p>
-                        <button onclick="showDetails('Java Server-Client Application', 'Developed a Java-based server-client application with socket programming, enabling real-time communication between users. Deployed the client as an Android app using Android Studio.')">More Info</button>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <img src="assets/Python.jpg" alt="Python Automation Scripts">
-                    <div class="project-info">
-                        <h3>Python Automation Scripts</h3>
-                        <p>Automated system tasks and file management using Python.</p>
-                        <button onclick="showDetails('Python Automation Scripts', 'Developed a Python program that automates file sorting based on type, renaming conventions, and storage management. Integrated with system cron jobs for periodic execution and logging.')">More Info</button>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <img src="assets/packet-tracer.png" alt="Packet Tracer Labs">
-                    <div class="project-info">
-                        <h3>Advanced Packet Tracer Labs</h3>
-                        <p>Hands-on networking labs using Cisco Packet Tracer.</p>
-                        <button onclick="showDetails('Advanced Packet Tracer Labs', 'Completed various Packet Tracer labs focusing on OSPF, BGP, WAN configurations, VPN setup, and cybersecurity simulations.')">More Info</button>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <img src="assets/images.jpg" alt="Linux Security Hardening">
-                    <div class="project-info">
-                        <h3>Linux Security Hardening</h3>
-                        <p>Configured security policies and auditing for a secure Linux environment.</p>
-                        <button onclick="showDetails('Linux Security Hardening', 'Implemented firewall rules, intrusion detection, SELinux policies, and system logging to enhance the security posture of a Linux server.')">More Info</button>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <img src="assets/wireshark.png" alt="Wireshark Network Analysis">
-                    <div class="project-info">
-                        <h3>Wireshark Network Analysis</h3>
-                        <p>Conducted network traffic analysis to identify security threats.</p>
-                        <button onclick="showDetails('Wireshark Network Analysis', 'Analyzed network traffic using Wireshark, identifying potential threats, bottlenecks, and security vulnerabilities through packet inspection.')">More Info</button>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section class="upcoming-projects">
-            <h2>Upcoming Projects</h2>
-            <p>Future developments and ongoing research.</p>
-            
-            <div class="upcoming-grid">
-                <div class="upcoming-card">
-                    <h3>Custom SIEM Development</h3>
-                    <p>Creating a lightweight SIEM solution for log monitoring, log aggregation, and anomaly detection.</p>
-                </div>
-                
-                <div class="upcoming-card">
-                    <h3>Linux Hardening Guide</h3>
-                    <p>Developing a structured approach to securing Linux environments, focusing on access control, auditing, and encryption.</p>
-                </div>
-        
-                <div class="upcoming-card">
-                    <h3>Network Traffic Analysis</h3>
-                    <p>Writing Python scripts to analyze PCAP files for threat detection and anomaly identification.</p>
-                </div>
-        
-                <div class="upcoming-card">
-                    <h3>Home Lab Infrastructure</h3>
-                    <p>Building a dedicated home lab for cybersecurity research, networking experiments, and penetration testing.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Project Details Modal -->
-        <div id="project-details" class="modal">
-            <div class="modal-content">
-                <h2 id="project-title"></h2>
-                <p id="project-description"></p>
-                <button onclick="closeDetails()">Close</button>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Ashraf Mugalli | <a href="contact.html">Get in Touch</a></p>
-    </footer>
-
-    <script>
-        function showDetails(title, description) {
-            document.getElementById('project-title').textContent = title;
-            document.getElementById('project-description').textContent = description;
-            document.getElementById('project-details').style.display = 'block';
-        }
-
-        function closeDetails() {
-            document.getElementById('project-details').style.display = 'none';
-        }
-    </script>
+    <div class="container">
+        <h1>🚧 Under Construction 🚧</h1>
+        <p>I'm currently redesigning my projects page to make it even better. Please check back soon!</p>
+        <p><a href="index.html">← Go back to the homepage</a></p>
+    </div>
 </body>
 </html>
